@@ -9,7 +9,7 @@
 @keyframes spin{to{transform:rotate(360deg)}}@keyframes shimmer{to{background-position:-200% 0}}@keyframes highlight{0%,70%{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}100%{border-color:var(--line)}}
 @media(min-width:1100px) and (min-height:740px){.card-grid{--card-height:154px}.main-content{padding-top:22px}.page-heading{margin-bottom:9px}.page-tabs-row{margin-bottom:12px}.topbar{height:76px}.card{padding:16px 20px}.card-head{margin-bottom:10px}.power-actions{margin-top:12px}.workspace-footer{padding-bottom:13px}}
 @media(max-width:1100px){.sidebar{width:72px}.topbar{padding:0 22px}.main-content{padding:23px 22px 16px}.workspace-footer{padding-right:22px;padding-left:22px}.card{padding:16px}.card-grid{gap:12px}.cpu-body{gap:10px}.cpu-number{width:80px}.media-body{gap:10px}.media-cover{width:48px;height:48px}.media-actions{gap:0}.media-actions .icon-button{min-width:44px}.metric-value{font-size:28px}.network-stat strong{font-size:17px}.pair-story{padding:38px}.story-copy h1{font-size:45px}.pair-panel{padding:35px}.power-actions{gap:4px}}
-@media(max-width:850px){.card-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.card{grid-column:span 1!important;grid-row:span 1!important}.card.wide-card{grid-column:span 2!important}.pair-story{padding:30px}.story-copy{margin-top:60px}.story-copy h1{font-size:38px}.story-foot{flex-wrap:wrap;line-height:1.8}.pair-panel{padding:28px}.pair-form-wrap form .code-input{letter-spacing:10px;font-size:28px}.page-heading h1{font-size:25px}.local-badge{display:none}.footer-foreground{max-width:35%}.power-actions{gap:8px}.media-cover{width:62px;height:62px}}
+@media(max-width:850px) and (min-height:621px){.card-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.card{grid-column:span 1!important;grid-row:span 1!important}.card.wide-card{grid-column:span 2!important}.pair-story{padding:30px}.story-copy{margin-top:60px}.story-copy h1{font-size:38px}.story-foot{flex-wrap:wrap;line-height:1.8}.pair-panel{padding:28px}.pair-form-wrap form .code-input{letter-spacing:10px;font-size:28px}.page-heading h1{font-size:25px}.local-badge{display:none}.footer-foreground{max-width:35%}.power-actions{gap:8px}.media-cover{width:62px;height:62px}}
 @media(max-width:600px){.workspace{flex-direction:column}.sidebar{position:relative;height:64px;width:100%;padding:8px 16px;flex-direction:row;border-right:0;border-bottom:1px solid var(--line)}.sidebar .brand-mark{width:38px;height:38px;font-size:25px;border-radius:11px;flex-shrink:0}.sidebar nav{display:flex;margin:0 0 0 18px;width:auto}.nav-button{width:49px;min-width:44px;min-height:44px;margin:0 4px 0 0}.nav-button small{display:none}.sidebar-bottom{margin:0 0 0 auto;flex-direction:row;gap:0}.sidebar-version{display:none}.sidebar-bottom .icon-button{min-width:44px;width:44px}.topbar{height:77px;padding:0 17px}.topbar-right{gap:12px}.clock{padding:0;border:0}.clock strong{font-size:19px}.device-avatar{display:none}.computer-avatar{padding:8px}.computer-identity strong{max-width:165px;font-size:12px}.main-content{padding:21px 16px 14px}.page-heading{align-items:flex-start;gap:10px;margin-bottom:14px}.page-heading h1{font-size:25px}.page-heading p{font-size:10px}.heading-actions{gap:6px;flex-direction:column}.heading-actions .btn{min-height:44px;font-size:11px;padding:0 10px}.heading-actions .btn .icon{width:15px;height:15px}.page-heading .eyebrow{font-size:8px}.card-grid{gap:10px;grid-auto-rows:minmax(158px,auto)}.card{padding:15px;border-radius:13px}.card-kicker{font-size:8px}.card-heading{font-size:11px}.metric-value{font-size:27px}.cpu-number{width:85px}.cpu-chart{height:65px}.network-body{gap:5px}.network-stat strong{font-size:18px}.network-stat em{display:block;margin:4px 0 0;font-size:9px}.network-divider{display:none}.network-stat small{font-size:9px}.media-actions .icon-button{min-width:44px}.media-title{font-size:13px}.media-cover{width:48px;height:48px}.media-body{gap:10px}.power-actions{gap:5px}.power-action small{font-size:9px}.workspace-footer{padding:10px 16px 18px;flex-wrap:wrap;line-height:1.6;font-size:9px}.footer-foreground{max-width:100%;order:3;width:100%}.connection-banner{padding:6px 16px;font-size:11px;gap:7px}.connection-banner>span:nth-child(2){flex:1}.pair-screen{display:block}.pair-story{padding:23px 26px 28px;border-right:0;border-bottom:1px solid var(--line)}.pair-brand strong{font-size:17px}.story-copy{margin-top:27px}.story-copy .eyebrow{font-size:8px}.story-copy h1{font-size:36px;margin:13px 0;line-height:1.2}.story-copy h1 br{display:none}.story-copy p{font-size:11px;line-height:1.8;margin-bottom:0}.pair-illustration,.story-foot{display:none}.pair-panel{padding:29px 26px 35px}.pair-form-wrap{max-width:430px}.pair-form-wrap h2{font-size:25px}.host-preview{margin:20px 0}.pair-form-wrap form .code-input{letter-spacing:18px;padding-left:24px}.modal-backdrop{padding:16px}.modal{max-height:calc(100vh - 32px)}.modal-header,.modal-content,.modal-footer{padding-left:18px;padding-right:18px}.drawer{border-radius:0;width:100%}.drawer .modal-header{padding:16px 18px}.drawer .modal-content{padding:15px 18px}.scan-targets{gap:8px}.scan-targets label{min-width:0}.scan-item{gap:10px}.scan-item .app-icon{width:35px;height:35px}.scan-name strong{font-size:11px}.scan-added{font-size:9px}.scan-footer .btn{font-size:12px}.app-tools .search-field{width:100%;min-width:0}.app-card{min-height:158px}.app-launch strong{font-size:12px}.settings-grid{gap:15px}.edit-toolbar>span{width:100%;line-height:1.7}.edit-toolbar .btn{font-size:11px;padding:0 9px}.card-edit-controls{flex-wrap:wrap}.card-edit-controls select{flex:1}.power-warning{font-size:11px}}
 @media(max-width:360px){.pair-form-wrap form .code-input{letter-spacing:13px}.media-body{flex-wrap:wrap}.media-actions{margin-left:auto}.power-action{padding:8px 1px}.power-action small{font-size:8px}.card{padding:12px}.sidebar{padding-right:10px;padding-left:10px}.sidebar nav{margin-left:8px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.spinner{animation-duration:2s!important}}
@@ -73,3 +73,193 @@
 @keyframes radarCore{0%,100%{box-shadow:0 0 0 0 rgba(122,170,255,.3)}50%{box-shadow:0 0 0 14px rgba(122,170,255,0)}}
 @media(max-width:600px){.modal-header-tools .btn{padding:0 9px;font-size:11px}.path-field{flex-direction:column}.path-browse{width:100%}.manual-icon-grid{max-height:180px}.browse-layer{padding:12px}.browse-panel{max-height:calc(100vh - 24px)}.browse-bar,.browse-drives,.browse-status{padding-left:14px;padding-right:14px}.offline-radar{width:150px;height:150px}.offline-title{font-size:21px}}
 @media(prefers-reduced-motion:reduce){.radar-ring,.radar-sweep,.radar-core{animation:none!important}.offline-overlay{transition:none}}
+
+/* ============================================================
+   移动端高密度布局
+   竖屏手机：压缩卡片高度与内边距，一屏多放一行
+   横屏手机（矮视口）：整屏进入密集模式，3~5 列 + 紧凑状态卡
+   ============================================================ */
+
+/* ---- 竖屏手机：更紧凑，但保留可点按尺寸 ---- */
+@media(max-width:600px){
+  .card-grid{gap:8px;grid-auto-rows:minmax(124px,auto)}
+  .card{padding:11px;border-radius:12px}
+  .app-card{min-height:124px}
+  .app-icon{width:40px;height:40px;border-radius:10px;font-size:18px}
+  .app-launch strong{margin-top:7px;font-size:12px;line-height:1.25}
+  .app-status{margin-top:2px;font-size:9px}
+  .page-heading p{display:none}
+  .topbar{height:58px}
+  .metric-value{font-size:24px}
+  .cpu-chart{height:52px}
+  .media-cover{width:44px;height:44px}
+
+  /* 标题区：按钮横排，压缩纵向占用 */
+  .page-heading{align-items:center;gap:8px;margin-bottom:9px}
+  .page-heading .eyebrow{font-size:8px;letter-spacing:1.4px;margin-bottom:3px}
+  .page-heading h1{font-size:21px;margin:0;line-height:1.2}
+  .heading-actions{flex-direction:row;gap:6px}
+  .heading-actions .btn{min-height:34px;height:34px;font-size:11px;padding:0 9px;gap:5px}
+  .heading-actions .btn .icon{width:13px;height:13px}
+
+  /* 标签与工具条 */
+  .page-tabs-row{min-height:34px;margin-bottom:8px}
+  .page-tab{min-height:34px;padding:0 11px;font-size:11px}
+  .page-tab .tab-count{font-size:9px;margin-left:5px}
+  .app-tools{gap:8px;margin-bottom:10px}
+  .search-field{height:36px;min-width:0;flex:1}
+  .search-field input{min-height:36px;font-size:12px;padding:0}
+  .chip{min-height:30px;padding:0 11px;font-size:11px}
+
+  /* 音量卡在窄屏同样要能收缩 */
+  .volume-controls input{flex:1 1 0;width:auto;min-width:0;height:34px;min-height:34px}
+  .volume-controls{gap:8px}
+  .mute-button{width:36px;height:36px;flex-shrink:0}
+}
+
+/* ---- 矮视口（横屏手机 / 分屏）：整屏密集 ---- */
+@media(max-height:620px){
+  /* 顶部与外壳 */
+  .demo-banner:not([hidden]){height:22px;font-size:11px;padding:3px 10px}
+  .demo-banner:not([hidden])~.workspace{min-height:calc(100vh - 22px)}
+  .demo-mode .modal-backdrop{top:22px}
+  .demo-mode .drawer{height:calc(100vh - 22px);max-height:calc(100vh - 22px)}
+  .topbar{height:46px;padding:0 12px}
+  .computer-avatar{padding:6px;border-radius:9px}
+  .computer-avatar .icon{width:16px;height:16px}
+  .computer-identity{gap:8px}
+  .computer-identity strong{font-size:11px;max-width:150px}
+  .computer-identity small{margin-top:2px;font-size:8.5px}
+  .local-badge{display:none}
+  .clock{padding-left:10px}
+  .clock strong{font-size:14px;letter-spacing:0}
+  .clock small{font-size:8.5px;margin-top:1px}
+  .topbar-right{gap:10px}
+  .device-avatar{width:26px;height:26px;font-size:9px;border-width:2px}
+  .sidebar{width:56px;padding:8px 6px 8px}
+  .brand-mark{width:34px;height:34px;font-size:21px;border-radius:10px}
+  .sidebar nav{margin-top:12px}
+  .nav-button{width:44px;min-height:44px;margin-bottom:3px;border-radius:9px}
+  .nav-button small{display:none}
+  .nav-button .icon{width:19px;height:19px}
+  .sidebar-bottom{gap:3px}
+  .sidebar-version{display:none}
+
+  /* 页面标题与工具条 */
+  .main-content{padding:8px 12px 8px}
+  .page-heading{margin-bottom:7px;align-items:center;gap:8px}
+  .page-heading .eyebrow,.page-heading p{display:none}
+  .page-heading h1{font-size:18px;margin:0;line-height:1.2}
+  .heading-actions{flex-direction:row;gap:6px}
+  .heading-actions .btn{min-height:32px;height:32px;font-size:11px;padding:0 10px;gap:5px}
+  .heading-actions .btn .icon{width:13px;height:13px}
+  .page-tabs-row{margin-bottom:6px;min-height:30px}
+  .page-tabs{max-width:calc(100% - 38px);gap:5px}
+  .page-tab{min-height:30px;padding:0 10px;font-size:11px;border-radius:8px}
+  .page-tab .tab-count{font-size:9px;margin-left:5px}
+  .app-tools{gap:8px;margin-bottom:8px}
+  .search-field{min-width:0;flex:1;height:34px;border-radius:9px;padding:0 9px}
+  .search-field input{min-height:34px;font-size:11px;padding:0}
+  .chip{min-height:30px;padding:0 10px;font-size:11px;border-radius:8px}
+
+  /* 卡片网格：3 列起，宽屏递增 */
+  .card-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px;grid-auto-rows:minmax(96px,auto)}
+  .card{padding:8px 10px;border-radius:10px}
+  .card-head{margin-bottom:4px;gap:6px}
+  .card-heading{font-size:10px;gap:5px}
+  .card-heading .icon{width:13px;height:13px}
+  .card-kicker{font-size:8px;letter-spacing:0}
+
+  /* 状态卡 */
+  .metric-value{font-size:20px;letter-spacing:-.5px}
+  .metric-value small{font-size:10px}
+  .metric-meta{margin-top:3px;font-size:8.5px}
+  .status-pill{margin-top:4px;font-size:8px;padding:2px 5px;border-radius:4px}
+  .cpu-body{gap:10px}
+  .cpu-number{width:62px}
+  .cpu-chart{height:42px}
+  .meter{margin-top:7px;height:4px}
+  .memory-detail{margin-top:3px;font-size:8.5px}
+  .network-body{margin-top:5px;gap:6px}
+  .network-stat small{margin-bottom:3px;font-size:8.5px;gap:3px}
+  .network-stat small .icon{width:10px;height:10px}
+  .network-stat strong{font-size:15px}
+  .network-stat em{font-size:8.5px;margin-left:2px}
+  .network-divider{display:none}
+  .disk-row{margin-top:5px;gap:8px}
+  .disk-icon{padding:6px;border-radius:7px}
+  .disk-name{font-size:10px}
+  .disk-name small{font-size:8px}
+  .disk-info .meter{margin-top:4px}
+  .disk-scroll{max-height:62px}
+
+  /* 音量 / 媒体 / 电源 */
+  .volume-top .metric-value{font-size:20px}
+  .volume-controls{gap:8px;margin-top:2px}
+  .volume-controls input{height:32px;min-height:32px;flex:1 1 0;width:auto;min-width:0}
+  .mute-button{width:32px;height:32px;border-radius:8px;flex-shrink:0}
+  .module-note{font-size:8.5px;margin-top:3px}
+  .media-body{gap:9px}
+  .media-cover{width:38px;height:38px;border-radius:9px}
+  .media-cover .icon{width:17px;height:17px}
+  .media-title{font-size:12px}
+  .media-artist{font-size:8.5px;margin-top:2px}
+  .media-actions{gap:0}
+  .media-actions .icon-button{min-width:32px;width:32px;height:32px}
+  .media-actions .icon-button .icon{width:15px;height:15px}
+  .media-progress{margin-top:7px}
+  .media-times{margin-top:2px;font-size:8px}
+  .power-actions{margin-top:5px;gap:4px}
+  .power-action{min-height:42px;gap:2px;padding:4px 2px;border-radius:8px}
+  .power-action .icon{width:14px;height:14px}
+  .power-action small{font-size:8.5px}
+  .workspace-footer{display:none}
+
+  /* 应用卡 */
+  .app-card{min-height:0;padding-bottom:8px}
+  .app-card .app-launch{padding-top:14px}
+  .app-launch{min-height:0}
+  .app-icon{width:32px;height:32px;border-radius:8px;font-size:15px}
+  .app-launch strong{margin-top:5px;font-size:10.5px;line-height:1.2}
+  .app-status{margin-top:2px;font-size:8px;gap:3px}
+  .app-actions{top:1px;right:1px}
+  .app-actions .icon-button{width:28px;height:28px;min-width:28px;min-height:28px;border-radius:6px}
+  .app-actions .icon-button .icon{width:13px;height:13px}
+
+  /* 配对页：横屏保持左右分栏，压缩留白 */
+  .pair-story{padding:18px 22px 20px}
+  .story-copy{margin-top:14px}
+  .story-copy h1{font-size:26px;margin:8px 0}
+  .story-copy p{font-size:10px;line-height:1.7}
+  .pair-illustration{display:none}
+  .pair-panel{padding:20px 22px 22px}
+  .pair-form-wrap h2{font-size:20px}
+  .host-preview{margin:12px 0}
+  .pair-form-wrap form .code-input{letter-spacing:12px;font-size:22px}
+
+  /* 弹窗与抽屉 */
+  .modal-backdrop{padding:10px}
+  .modal{max-height:calc(100vh - 20px)}
+  .modal-header,.modal-content,.modal-footer{padding-left:14px;padding-right:14px}
+  .modal-header{padding-top:10px;padding-bottom:10px}
+  .drawer{width:100%;border-radius:0}
+}
+
+@media(max-height:620px) and (min-width:880px){
+  .card-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+  .card-grid{grid-auto-rows:minmax(100px,auto)}
+}
+
+@media(max-height:620px) and (min-width:1180px){
+  .card-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+}
+
+/* 横屏手机：媒体/音量卡在 3 列里偏窄，允许内容换行 */
+@media(max-height:620px) and (max-width:879px){
+  .network-stat strong{font-size:13px}
+  .network-stat em{display:inline;margin-left:2px;font-size:8px}
+  .network-body{gap:4px}
+  .media-body{flex-wrap:wrap}
+  .media-actions{margin-left:auto}
+}
+
