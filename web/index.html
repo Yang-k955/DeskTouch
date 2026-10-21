@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f6fb">
+  <meta name="description" content="DeskTouch · 你的电脑，触手可及。局域网平板控制工作台。">
+  <title>DeskTouch · 桌触</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icon192.png">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div id="demo-banner" class="demo-banner" role="status" hidden>演示模式 · 不控制电脑</div>
+  <div id="storage-warning" class="storage-warning" role="status" hidden></div>
+  <section id="pair-screen" class="pair-screen">
+    <div class="pair-story">
+      <a class="brand pair-brand" href="./" aria-label="DeskTouch 首页"><span class="brand-mark" aria-hidden="true">D<span></span></span><strong>DeskTouch<small>桌触 · 局域网工作台</small></strong></a>
+      <div class="story-copy"><span class="eyebrow">YOUR DESK. ONE TOUCH.</span><h1>你的电脑，<br>触手可及<span class="accent-text">。</span></h1><p>让闲置的平板，成为桌面上的第二块控制屏。<br>应用、音乐、系统状态，都在手边。</p></div>
+      <div class="pair-illustration" aria-hidden="true"><div class="illus-top"><span></span><span></span><span></span><i>DESKTOUCH</i></div><div class="illus-grid"><div class="illus-chart"><b>CPU</b><svg viewBox="0 0 250 70"><path d="M0 60 L20 48 L40 54 L60 28 L80 36 L100 16 L120 39 L140 29 L160 46 L180 21 L200 31 L225 12 L250 22" fill="none" stroke="currentColor" stroke-width="3"/></svg></div><div class="illus-meter"><b>RAM</b><span></span></div><div class="illus-wide"><span class="music-bars"><i></i><i></i><i></i><i></i></span><b>随时掌控，专注当下</b></div></div></div>
+      <div class="story-foot"><span class="dot"></span> 无需安装 App <span>·</span> 无外部 CDN <span>·</span> 仅限可信局域网</div>
+    </div>
+    <div class="pair-panel">
+      <div class="pair-form-wrap"><span class="mini-label">开始连接 / CONNECT</span><h2>连接你的电脑</h2><p class="muted">在电脑系统托盘中打开 DeskTouch 查看配对码，<br>输入后即可安全连接。</p>
+        <div class="host-preview"><span class="host-symbol" data-icon="monitor"></span><div><strong id="pair-host">正在寻找 DeskTouch 服务…</strong><small id="pair-health">同一 Wi-Fi 下，建立你的专属连接</small></div><span id="pair-health-dot" class="dot"></span></div>
+        <form id="pair-form">
+          <label for="pair-code">6 位配对码</label>
+          <input id="pair-code" class="code-input" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="one-time-code" placeholder="000000" required aria-describedby="pair-error">
+          <label for="device-name">设备名称 <span class="muted">（方便识别）</span></label>
+          <input id="device-name" maxlength="64" value="我的平板" autocomplete="off" required>
+          <p id="pair-error" class="form-error" role="alert"></p>
+          <button id="pair-submit" class="btn primary pair-submit" type="submit">配对并进入工作台 <span data-icon="arrow-right"></span></button>
+        </form>
+        <div class="lan-note"><span data-icon="wifi"></span><div><strong>电脑和平板需要连接同一局域网</strong><p>平板浏览器打开电脑控制台显示的局域网地址。不要使用 localhost 或 127.0.0.1。</p><code id="lan-address"></code><button id="health-retry" class="text-button" type="button">重新检测服务</button></div></div>
+        <p class="pair-remember">配对后，再次使用相同地址、同一浏览器打开即可自动恢复。请使用非无痕窗口并允许本地存储；电脑休眠或临时掉线不会解除配对。</p>
+        <small class="pair-security"><span data-icon="shield"></span> 配对令牌只保存在此浏览器，不通过地址传递</small>
+      </div>
+    </div>
+  </section>
+  <div id="workspace" class="workspace" hidden>
+    <aside class="sidebar" aria-label="主导航">
+      <a class="brand-mark" href="./" aria-label="DeskTouch 首页">D<span></span></a>
+      <nav><button id="nav-overview" class="nav-button active" aria-label="工作台" title="工作台" type="button"><span data-icon="grid"></span><small>工作台</small></button><button id="nav-apps" class="nav-button" aria-label="快捷应用" title="快捷应用" type="button"><span data-icon="apps"></span><small>应用</small></button></nav>
+      <div class="sidebar-bottom"><button id="theme-toggle" class="icon-button" type="button" aria-label="切换深色主题" title="切换主题"><span data-icon="moon"></span></button><button id="fullscreen-toggle" class="icon-button" type="button" aria-label="进入全屏" title="全屏"><span data-icon="fullscreen"></span></button><button id="settings-open" class="icon-button" type="button" aria-label="设置" title="设置"><span data-icon="settings"></span></button><span class="sidebar-version">DT / <span id="side-version">—</span></span></div>
+    </aside>
+    <div class="workspace-body">
+      <header class="topbar"><div class="computer-identity"><span class="computer-avatar" data-icon="monitor"></span><div><strong id="hostname">DeskTouch</strong><small><span id="connection-dot" class="dot"></span><span id="connection-label">正在连接</span></small></div></div><div class="topbar-right"><span class="local-badge"><span data-icon="shield"></span> 私有局域网</span><div class="clock"><strong id="clock-time">--:--</strong><small id="clock-date">—</small></div><span class="device-avatar" title="此平板">DT</span></div></header>
+      <div id="connection-banner" class="connection-banner" role="status" hidden><span data-icon="wifi"></span><span id="connection-message"></span><button id="connection-retry" class="text-button" type="button">立即重连</button></div>
+      <main class="main-content">
+        <div class="page-heading"><div><span class="eyebrow" id="page-eyebrow">DESK OVERVIEW</span><h1 id="page-title">工作台</h1><p id="page-description">掌握此刻，保持专注。</p></div><div class="heading-actions"><button id="edit-toggle" class="btn subtle" type="button" aria-pressed="false"><span data-icon="edit"></span><span id="edit-label">编辑布局</span></button><button id="scan-open" class="btn primary" type="button"><span data-icon="plus"></span> 添加应用</button></div></div>
+        <div class="page-tabs-row"><div id="page-tabs" class="page-tabs" aria-label="切换页面"></div><button id="page-add" class="icon-button" type="button" aria-label="新建页面" title="新建页面"><span data-icon="plus"></span></button></div>
+        <div id="edit-toolbar" class="edit-toolbar" hidden><span>用左右按钮移动卡片，调整跨列宽度。</span><button id="card-add" class="btn subtle" type="button"><span data-icon="plus"></span> 添加卡片</button><button id="edit-save" class="btn primary" type="button">保存布局</button><button id="edit-cancel" class="btn subtle" type="button">取消</button></div>
+        <div id="app-tools" class="app-tools" hidden><label class="search-field"><span data-icon="search"></span><input id="app-search" placeholder="搜索快捷应用" aria-label="搜索快捷应用" autocomplete="off"></label><div id="app-group-filters" class="chip-list"></div></div>
+        <div id="card-grid" class="card-grid" aria-label="控制面板"></div>
+      </main>
+      <footer class="workspace-footer"><span><span class="dot"></span><span id="snapshot-age">等待电脑状态</span></span><span id="foreground-summary" class="footer-foreground">前台窗口 · —</span><span id="uptime-summary">运行时间 · —</span></footer>
+    </div>
+  </div>
+  <div id="offline-overlay" class="offline-overlay" role="status" aria-live="polite" hidden>
+    <div class="offline-card">
+      <div class="offline-radar" aria-hidden="true"><span class="radar-ring"></span><span class="radar-ring"></span><span class="radar-ring"></span><span class="radar-sweep"></span><span class="radar-core" data-icon="monitor"></span></div>
+      <h2 class="offline-title">设备离线</h2>
+      <p class="offline-sub">正在等待电脑恢复…</p>
+      <p id="offline-note" class="offline-note">电脑可能已休眠、关机，或平板与电脑的网络暂时断开。恢复连接后会自动继续，不需要重新配对。</p>
+      <p id="offline-status" class="offline-status" aria-live="off">正在尝试重新连接…</p>
+      <button id="offline-retry" class="btn primary offline-retry" type="button"><span data-icon="refresh"></span> 立即重试</button>
+    </div>
+  </div>
+  <div id="modal-root" hidden></div>
+  <div id="toasts" class="toasts" aria-live="polite" aria-atomic="false"></div>
+  <noscript><div class="noscript">请启用 JavaScript，以连接电脑并使用 DeskTouch。</div></noscript>
+</body>
+</html>

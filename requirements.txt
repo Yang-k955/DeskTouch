@@ -1,0 +1,16 @@
+fastapi>=0.115,<1
+uvicorn[standard]>=0.32,<1
+psutil>=6,<8
+pywin32>=308; sys_platform == "win32"
+pycaw>=20240210; sys_platform == "win32"
+comtypes>=1.4; sys_platform == "win32"
+Pillow>=11,<13
+pystray>=0.19.5,<0.20; sys_platform == "win32"
+qrcode>=8,<9
+winrt-runtime>=3,<4; sys_platform == "win32"
+winrt-Windows.Foundation>=3,<4; sys_platform == "win32"
+winrt-Windows.Foundation.Collections>=3,<4; sys_platform == "win32"
+winrt-Windows.Media>=3,<4; sys_platform == "win32"
+winrt-Windows.Storage>=3,<4; sys_platform == "win32"
+winrt-Windows.Media.Control>=3,<4; sys_platform == "win32"
+winrt-Windows.Storage.Streams>=3,<4; sys_platform == "win32"

@@ -1,0 +1,59 @@
+# ---- 运行时数据与日志（含配对令牌哈希，绝不能提交）----
+data/
+logs/
+*.log
+desktop.json
+location.json
+state.json
+config.json
+scan_cache.json
+
+# ---- 构建产物 ----
+build/
+dist/
+outputs/
+*.zip
+*.exe
+*.spec.bak
+
+# ---- 测试与开发工具（本仓库不收录）----
+tests/
+tools/
+docs/
+.pytest_cache/
+.coverage
+coverage*.json
+htmlcov/
+pytest-*/
+web/.ui-check-*.png
+*.ui-check-*.png
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+
+# ---- 编辑器与系统 ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 本地智能体工作目录 ----
+.workbuddy-ai/
+.claude/
+.cursor/
+
+# ---- 敏感凭据 ----
+.env
+.env.*
+*.pem
+*.key
